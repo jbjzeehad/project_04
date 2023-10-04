@@ -16,8 +16,8 @@
         <div class="border-2 border-red-900 ">
             <p>---SALE FEVER---</p>
             <p>Purchase TK 200 or above & get 20% off</p>
-            <input type="text" placeholder="Use Promo Code">
-            <button>SELL200</button>
+            <p>Use Promo Code</p>
+            <button onclick="bonusButton('SELL200')">SELL200</button>
         </div>
         <div class="border-2 border-black m-5"><img class="border-2 border-red-900" src="images/Summer 1.png" alt="">
         </div>
@@ -188,8 +188,8 @@
         <section class="border-2 border-red-900 w-[500px]">
             <div class=" border-red-900">
                 <h2>Have coupon?</h2>
-                <input type="text" placeholder="Coupon code">
-                <button>Apply</button>
+                <input id="discount-code" type="text" placeholder="Coupon code">
+                <button id="dis-btn" disabled>Apply</button>
             </div>
             <!-- Selected List -->
             <div id="card-entry" class="border border-red-900 font-sans font-medium text-2xl">

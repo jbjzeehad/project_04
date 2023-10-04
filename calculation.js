@@ -18,7 +18,20 @@ function clickedCard(inputvalue) {
     // console.log(typeof (cardinPrice));
     const totalPricestring = document.getElementById('total-price');
     const totalPricevalue = parseFloat(totalPricestring.innerText);
+
+    // Total price :
     const totalitemprice = totalPricevalue + cardinPrice;
+
+    if (totalitemprice >= 200) {
+        console.log('Bonus button open');
+
+        const bonusbutton = document.getElementById('dis-btn');
+        bonusbutton.removeAttribute('disabled');
+    }
+
+
+
+
     totalPricestring.innerText = totalitemprice.toFixed(2);
 
     const totalstring = document.getElementById('total');
@@ -36,4 +49,12 @@ function cardNameEntry(cardname) {
     par.innerHTML = `${count}. ${cnamestring}`;
     cardentrystring.appendChild(par);
 
+}
+
+
+
+function bonusButton(couponcode) {
+    console.log(couponcode);
+    const inputstring = document.getElementById('discount-code');
+    inputstring.value = couponcode;
 }
