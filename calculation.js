@@ -1,4 +1,4 @@
-
+let btnclick = 0;
 
 // document.getElementById('card-09').addEventListener('click', function () {
 //     console.log('Card 09 clicked');
@@ -9,6 +9,28 @@
 //     totalPricestring.innerText = card09Price.toFixed(2);
 
 // })
+
+document.getElementById('dis-btn').addEventListener('click', function () {
+    console.log("running");
+    const discode = document.getElementById('discount-code');
+    if (discode.value === 'SELL200') {
+        // btnclick = 1;
+        const currenttotalstring = document.getElementById('total-price');
+        const disstring = document.getElementById('discount');
+        const currenttotalvalue = parseFloat(currenttotalstring.innerText);
+        const saving = currenttotalvalue * 0.2;
+        disstring.innerText = saving.toFixed(2);
+        const finaltotal = currenttotalvalue - saving;
+        const purchasetotal = document.getElementById('total');
+        purchasetotal.innerText = finaltotal.toFixed(2);
+
+    }
+    // console.log(btnclick);
+    // console.log(totalitemprice);
+})
+
+
+
 
 function clickedCard(inputvalue) {
     // console.log(inputvalue, " Function called");
@@ -21,6 +43,7 @@ function clickedCard(inputvalue) {
 
     // Total price :
     const totalitemprice = totalPricevalue + cardinPrice;
+    totalPricestring.innerText = totalitemprice.toFixed(2);
 
     if (totalitemprice >= 200) {
         console.log('Bonus button open');
@@ -28,12 +51,6 @@ function clickedCard(inputvalue) {
         const bonusbutton = document.getElementById('dis-btn');
         bonusbutton.removeAttribute('disabled');
     }
-
-
-
-
-    totalPricestring.innerText = totalitemprice.toFixed(2);
-
     const totalstring = document.getElementById('total');
     totalstring.innerText = totalitemprice.toFixed(2);
 }
