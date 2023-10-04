@@ -9,3 +9,9 @@ header {
 figure {
     background-color: rgba(17, 17, 17, 5%);
 }
+
+.common-btn {
+    background-color: rgba(229, 39, 178, 100%);
+    color: white;
+    border-radius: 8px;
+}
