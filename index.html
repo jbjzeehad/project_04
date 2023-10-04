@@ -32,42 +32,44 @@
 
                     <!-- K.ware Card 01 -->
 
-                    <div onclick="clickedCard('c1price')"
+                    <div onclick="clickedCard('c1price'),cardNameEntry('c1name')"
                         class="border-4 border-lime-900 card w-96 bg-base-100 shadow-xl p-4">
                         <figure class="border-2 border-red-900 p-11">
                             <img class="border-2 border-red-900" src="images/prod1.png" alt="kitchen-accessories"
                                 class="rounded-xl" />
                         </figure>
                         <div class="border-2 border-red-900 card-body items-center text-center">
-                            <h2 class="border font-sans font-semibold text-xl card-title">K. Accessories</h2>
+                            <h2 id="c1name" class="border font-sans font-semibold text-xl card-title">K. Accessories
+                            </h2>
                             <p><span id="c1price">39.00</span> TK</p>
                         </div>
                     </div>
 
                     <!-- K.ware Card 02 -->
 
-                    <div onclick="clickedCard('c2price')"
+                    <div onclick="clickedCard('c2price'),cardNameEntry('c2name')"
                         class="border-4 border-lime-900 card w-96 bg-base-100 shadow-xl p-4">
                         <figure class="border-2 border-red-900 p-10">
                             <img class="border-2 border-red-900" class="border-2 border-red-900" src="images/prod2.png"
                                 alt="kitchen-accessories" class="rounded-xl" />
                         </figure>
                         <div class="border-2 border-red-900 card-body items-center text-center">
-                            <h2 class="border font-sans font-semibold text-xl card-title">K. Accessories</h2>
+                            <h2 id="c2name" class="border font-sans font-semibold text-xl card-title">K. Accessories
+                            </h2>
                             <p><span id="c2price">25.00</span> TK</p>
                         </div>
                     </div>
 
                     <!-- K.ware Card 03 -->
 
-                    <div onclick="clickedCard('c3price')"
+                    <div onclick="clickedCard('c3price'),cardNameEntry('c3name')"
                         class="border-4 border-lime-900 card w-96 bg-base-100 shadow-xl p-4">
                         <figure class="border-2 border-red-900 p-11">
                             <img class="border-2 border-red-900" class="border-2 border-red-900" src="images/prod3.png"
                                 alt="kitchen-accessories" class="rounded-xl" />
                         </figure>
                         <div class="border-2 border-red-900 card-body items-center text-center">
-                            <h2 class="border font-sans font-semibold text-xl card-title">Home Cooker</h2>
+                            <h2 id="c3name" class="border font-sans font-semibold text-xl card-title">Home Cooker</h2>
                             <p><span id="c3price">49.00</span> TK</p>
                         </div>
                     </div>
@@ -82,42 +84,44 @@
 
                     <!-- S.wear Card 01 -->
 
-                    <div onclick="clickedCard('c4price')"
+                    <div onclick="clickedCard('c4price'),cardNameEntry('c4name')"
                         class="border-4 border-lime-900 card w-96 bg-base-100 shadow-xl p-4">
                         <figure class="border-2 border-red-900 p-12">
                             <img class="border-2 border-red-900" src="images/prod4.png" alt="sports-back-cap"
                                 class="rounded-xl" />
                         </figure>
                         <div class="border-2 border-red-900 card-body items-center text-center">
-                            <h2 class="border font-sans font-semibold text-xl card-title">Sports Back Cap</h2>
+                            <h2 id="c4name" class="border font-sans font-semibold text-xl card-title">Sports Back Cap
+                            </h2>
                             <p><span id="c4price">49.00</span> TK</p>
                         </div>
                     </div>
 
                     <!-- S.wear Card 02 -->
 
-                    <div onclick="clickedCard('c5price')"
+                    <div onclick="clickedCard('c5price'),cardNameEntry('c5name')"
                         class="border-4 border-lime-900 card w-96 bg-base-100 shadow-xl p-4">
                         <figure class="border-2 border-red-900 px-10 py-10">
                             <img class="border-2 border-red-900" src="images/prod5.png" alt="full-jersey-set"
                                 class="rounded-xl" />
                         </figure>
                         <div class="border-2 border-red-900 card-body items-center text-center">
-                            <h2 class="border font-sans font-semibold text-xl card-title">Full Jersey Set</h2>
+                            <h2 id="c5name" class="border font-sans font-semibold text-xl card-title">Full Jersey Set
+                            </h2>
                             <p><span id="c5price">69.00</span> TK</p>
                         </div>
                     </div>
 
                     <!-- S.wear Card 03 -->
 
-                    <div onclick="clickedCard('c6price')"
+                    <div onclick="clickedCard('c6price'),cardNameEntry('c6name') "
                         class="border-4 border-lime-900 card w-96 bg-base-100 shadow-xl p-4">
                         <figure class="border-2 border-red-900 px-10 py-10">
                             <img class="border-2 border-red-900" src="images/prod6.png" alt="kitchen-accessories"
                                 class="rounded-xl" />
                         </figure>
                         <div class="border-2 border-red-900 card-body items-center text-center">
-                            <h2 class="border font-sans font-semibold text-xl card-title">Sports cates</h2>
+                            <h2 id="c6name" class="border font-sans font-semibold text-xl card-title">Sports cates</h2>
                             <p><span id="c6price">159.00</span> TK</p>
 
                         </div>
@@ -133,14 +137,15 @@
 
                     <!-- F.ure Card 01 -->
 
-                    <div onclick="clickedCard('c7price')"
+                    <div onclick="clickedCard('c7price'),cardNameEntry('c7name')"
                         class="border-4 border-lime-900 card w-96 bg-base-100 shadow-xl p-4">
                         <figure class="border-2 border-red-900 px-10 py-10">
                             <img class="border-2 border-red-900" src="images/prod7.png" alt="single-relax-chair"
                                 class="rounded-xl" />
                         </figure>
                         <div class="border-2 border-red-900 card-body items-center text-center">
-                            <h2 class="border font-sans font-semibold text-xl card-title">Single Relax Chair</h2>
+                            <h2 id="c7name" class="border font-sans font-semibold text-xl card-title">Single Relax Chair
+                            </h2>
                             <p><span id="c7price">185.00</span> TK</p>
 
                         </div>
@@ -148,14 +153,14 @@
 
                     <!-- F.ure Card 02 -->
 
-                    <div onclick="clickedCard('c8price')" id="card-08"
+                    <div onclick="clickedCard('c8price'),cardNameEntry('c8name')" id="card-08"
                         class="border-4 border-lime-900 card w-96 bg-base-100 shadow-xl p-4">
                         <figure class="border-2 border-red-900 px-10 py-10">
                             <img class="border-2 border-red-900" src="images/prod8.png" alt="children-play"
                                 class="rounded-xl" />
                         </figure>
                         <div class="border-2 border-red-900 card-body items-center text-center">
-                            <h2 class="border font-sans font-semibold text-xl card-title">Children Play</h2>
+                            <h2 id="c8name" class="border font-sans font-semibold text-xl card-title">Children Play</h2>
                             <p><span id="c8price">299.00</span> TK</p>
 
                         </div>
@@ -181,21 +186,23 @@
         <!-- Right Section -->
 
         <section class="border-2 border-red-900 w-[500px]">
-            <div class="border-2 border-red-900">
+            <div class=" border-red-900">
                 <h2>Have coupon?</h2>
                 <input type="text" placeholder="Coupon code">
                 <button>Apply</button>
             </div>
             <!-- Selected List -->
             <div id="card-entry" class="border border-red-900 font-sans font-medium text-2xl">
+                <hr>
             </div>
 
-            <div class="border-2 border-red-900 text-left">
-                <p class="border-2 border-red-900">
+            <div class=" border-red-900 text-left">
+                <p class=" border-red-900">
                     Total price : <span id="total-price">00.00</span> TK</p>
-                <p class="border-2 border-red-900">Discont : <span id="discount">00.00</span> TK</p>
-                <p class="border-2 border-red-900">
+                <p class=" border-red-900">Discont : <span id="discount">00.00</span> TK</p>
+                <p class=" border-red-900">
                     Total : <span id="total">00.00</span> TK</p>
+                <hr>
                 <button>Make Purchase</button>
             </div>
 

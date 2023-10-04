@@ -1,4 +1,4 @@
-console.log("ok i am done");
+
 
 // document.getElementById('card-09').addEventListener('click', function () {
 //     console.log('Card 09 clicked');
@@ -11,16 +11,18 @@ console.log("ok i am done");
 // })
 
 function clickedCard(inputvalue) {
-    console.log(inputvalue, " Function called");
+    // console.log(inputvalue, " Function called");
     const cardinPricestring = document.getElementById(inputvalue);
     const cardinPrice = parseFloat(cardinPricestring.innerText);
-    console.log(cardinPrice.toFixed(2));
-    console.log(typeof (cardinPrice));
+    // console.log(cardinPrice.toFixed(2));
+    // console.log(typeof (cardinPrice));
     const totalPricestring = document.getElementById('total-price');
-    totalPricestring.innerText = cardinPrice.toFixed(2);
+    const totalPricevalue = parseFloat(totalPricestring.innerText);
+    const totalitemprice = totalPricevalue + cardinPrice;
+    totalPricestring.innerText = totalitemprice.toFixed(2);
 
     const totalstring = document.getElementById('total');
-    totalstring.innerText = cardinPrice.toFixed(2);
+    totalstring.innerText = totalitemprice.toFixed(2);
 }
 
 
@@ -31,7 +33,7 @@ function cardNameEntry(cardname) {
     const cardentrystring = document.getElementById('card-entry');
     const count = cardentrystring.childElementCount;
     const par = document.createElement('p');
-    par.innerHTML = `${count + 1}. ${cnamestring}`;
+    par.innerHTML = `${count}. ${cnamestring}`;
     cardentrystring.appendChild(par);
 
 }
