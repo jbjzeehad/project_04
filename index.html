@@ -12,34 +12,43 @@
 </head>
 
 <body class="bg-white-900">
-    <header class="border-2 border-red-900 grid grid-cols-2">
-        <div class="border-2 border-red-900 ">
-            <p>---SALE FEVER---</p>
-            <p>Purchase TK 200 or above & get 20% off</p>
-            <p>Use Promo Code</p>
-            <button onclick="bonusButton('SELL200')"
-                class=" common-btn w-32 p-3 font-sans font-semibold text-xl">SELL200</button>
+    <header class="grid grid-cols-2">
+        <div class="text-center ml-52 my-56 p-24">
+            <p class="font-sans font-medium text-4xl">---SALE FEVER---</p>
+            <p class="font-sans font-bold text-6xl py-10">Purchase TK 200 or above & get <span class="text-pink-500">20%
+                    off</span></p>
+            <div class="grid grid-cols-2 mt-4">
+                <p class="font-sans font-medium text-2xl text-end p-3">Use Promo Code</p>
+                <button onclick="bonusButton('SELL200')"
+                    class="common-btn w-32 p-3 font-sans font-semibold text-xl">SELL200</button>
+            </div>
         </div>
-        <div class="border-2 border-black m-5"><img class="border-2 border-red-900" src="images/Summer 1.png" alt="">
+        <div class="m-5"><img src="images/Summer 1.png" alt="">
         </div>
     </header>
-    <main class="flex flex-col lg:flex-row">
+    <main class="mx-40 flex flex-col lg:flex-row">
         <!-- Left Section -->
-        <section class="ml-32 border-2 border-red-900 grid grid-cols-1 gap-12 ">
+        <section class="my-32 grid grid-cols-1">
             <!-- Kitchenware Part -->
-            <div class=" border-red-900 my-5">
-                <h2 class=" border-red-900 font-sans font-semibold text-4xl mb-5">Kitchenware</h2>
-                <div class=" border-red-900 grid grid-cols-3">
+            <div class="my-5">
+                <h2 class="font-sans font-semibold text-4xl mb-5">Kitchenware</h2>
+                <div class="grid grid-cols-3 gap-9">
 
                     <!-- K.ware Card 01 -->
 
                     <div onclick="clickedCard('c1price'),cardNameEntry('c1name')"
-                        class=" border-lime-900 card w-96 bg-base-100 shadow-sm p-4">
-                        <figure class=" border-red-900 p-11">
-                            <img class=" border-red-900" src="images/prod1.png" alt="kitchen-accessories"
-                                class="rounded-xl" />
+                        class="card w-96 bg-base-100 shadow-sm p-4">
+                        <figure class="p-11">
+                            <img src="images/prod1.png" alt="kitchen-accessories" class="rounded-xl" />
                         </figure>
-                        <div class=" border-red-900 card-body items-center text-center">
+                        <div class="card-body items-center text-center">
+                            <div class="rating">
+                                <input type="radio" name="rating-1" class="mask mask-star-2 bg-amber-400" />
+                                <input type="radio" name="rating-1" class="mask mask-star-2 bg-amber-400" />
+                                <input type="radio" name="rating-1" class="mask mask-star-2 bg-amber-400" checked />
+                                <input type="radio" name="rating-1" class="mask mask-star-2 bg-amber-400" />
+                                <input type="radio" name="rating-1" class="mask mask-star-2 bg-amber-400" />
+                            </div>
                             <h2 id="c1name" class=" font-sans font-semibold text-xl card-title">K. Accessories
                             </h2>
                             <p><span id="c1price">39.00</span> TK</p>
@@ -49,12 +58,18 @@
                     <!-- K.ware Card 02 -->
 
                     <div onclick="clickedCard('c2price'),cardNameEntry('c2name')"
-                        class=" border-lime-900 card w-96 bg-base-100 shadow-sm p-4">
-                        <figure class=" border-red-900 p-10">
-                            <img class=" border-red-900" class="border-2 border-red-900" src="images/prod2.png"
-                                alt="kitchen-accessories" class="rounded-xl" />
+                        class="card w-96 bg-base-100 shadow-sm p-4">
+                        <figure class="p-10">
+                            <img src="images/prod2.png" alt="kitchen-accessories" class="rounded-xl" />
                         </figure>
-                        <div class=" border-red-900 card-body items-center text-center">
+                        <div class="card-body items-center text-center">
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-amber-400" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-amber-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-amber-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-amber-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-amber-400" />
+                            </div>
                             <h2 id="c2name" class=" font-sans font-semibold text-xl card-title">K. Accessories
                             </h2>
                             <p><span id="c2price">25.00</span> TK</p>
@@ -64,12 +79,18 @@
                     <!-- K.ware Card 03 -->
 
                     <div onclick="clickedCard('c3price'),cardNameEntry('c3name')"
-                        class=" border-lime-900 card w-96 bg-base-100 shadow-sm p-4">
-                        <figure class=" border-red-900 p-11">
-                            <img class=" border-red-900" class="border-2 border-red-900" src="images/prod3.png"
-                                alt="kitchen-accessories" class="rounded-xl" />
+                        class="card w-96 bg-base-100 shadow-sm p-4">
+                        <figure class="p-11">
+                            <img src="images/prod3.png" alt="kitchen-accessories" class="rounded-xl" />
                         </figure>
-                        <div class=" border-red-900 card-body items-center text-center">
+                        <div class="card-body items-center text-center">
+                            <div class="rating">
+                                <input type="radio" name="rating-3" class="mask mask-star-2 bg-amber-400" />
+                                <input type="radio" name="rating-3" class="mask mask-star-2 bg-amber-400" />
+                                <input type="radio" name="rating-3" class="mask mask-star-2 bg-amber-400" />
+                                <input type="radio" name="rating-3" class="mask mask-star-2 bg-amber-400" checked />
+                                <input type="radio" name="rating-3" class="mask mask-star-2 bg-amber-400" />
+                            </div>
                             <h2 id="c3name" class=" font-sans font-semibold text-xl card-title">Home Cooker</h2>
                             <p><span id="c3price">49.00</span> TK</p>
                         </div>
@@ -79,20 +100,26 @@
 
             <!-- Sportswear Part -->
 
-            <div class=" border-red-900 mt-5">
-                <h2 class=" border-red-900 font-sans font-semibold text-4xl">Sportswear</h2>
-                <div class=" border-red-900 grid grid-cols-3">
+            <div class="my-5">
+                <h2 class="font-sans font-semibold text-4xl mb-5">Sportswear</h2>
+                <div class="grid grid-cols-3 gap-9">
 
                     <!-- S.wear Card 01 -->
 
                     <div onclick="clickedCard('c4price'),cardNameEntry('c4name')"
-                        class=" border-lime-900 card w-96 bg-base-100 shadow-xl p-4">
-                        <figure class=" border-red-900 p-12">
-                            <img class=" border-red-900" src="images/prod4.png" alt="sports-back-cap"
-                                class="rounded-xl" />
+                        class="card w-96 bg-base-100 shadow-sm p-4">
+                        <figure class="p-12">
+                            <img src="images/prod4.png" alt="sports-back-cap" class="rounded-xl" />
                         </figure>
-                        <div class=" border-red-900 card-body items-center text-center">
-                            <h2 id="c4name" class="border font-sans font-semibold text-xl card-title">Sports Back Cap
+                        <div class="card-body items-center text-center">
+                            <div class="rating">
+                                <input type="radio" name="rating-4" class="mask mask-star-2 bg-amber-400" />
+                                <input type="radio" name="rating-4" class="mask mask-star-2 bg-amber-400" checked />
+                                <input type="radio" name="rating-4" class="mask mask-star-2 bg-amber-400" />
+                                <input type="radio" name="rating-4" class="mask mask-star-2 bg-amber-400" />
+                                <input type="radio" name="rating-4" class="mask mask-star-2 bg-amber-400" />
+                            </div>
+                            <h2 id="c4name" class=" font-sans font-semibold text-xl card-title">Sports Back Cap
                             </h2>
                             <p><span id="c4price">49.00</span> TK</p>
                         </div>
@@ -101,12 +128,18 @@
                     <!-- S.wear Card 02 -->
 
                     <div onclick="clickedCard('c5price'),cardNameEntry('c5name')"
-                        class=" border-lime-900 card w-96 bg-base-100 shadow-xl p-4">
-                        <figure class=" border-red-900 px-10 py-10">
-                            <img class="border-2 border-red-900" src="images/prod5.png" alt="full-jersey-set"
-                                class="rounded-xl" />
+                        class="card w-96 bg-base-100 shadow-sm p-4">
+                        <figure class="px-10 py-10">
+                            <img src="images/prod5.png" alt="full-jersey-set" class="rounded-xl" />
                         </figure>
-                        <div class=" border-red-900 card-body items-center text-center">
+                        <div class="card-body items-center text-center">
+                            <div class="rating">
+                                <input type="radio" name="rating-5" class="mask mask-star-2 bg-amber-400" />
+                                <input type="radio" name="rating-5" class="mask mask-star-2 bg-amber-400" />
+                                <input type="radio" name="rating-5" class="mask mask-star-2 bg-amber-400" />
+                                <input type="radio" name="rating-5" class="mask mask-star-2 bg-amber-400" checked />
+                                <input type="radio" name="rating-5" class="mask mask-star-2 bg-amber-400" />
+                            </div>
                             <h2 id="c5name" class=" font-sans font-semibold text-xl card-title">Full Jersey Set
                             </h2>
                             <p><span id="c5price">69.00</span> TK</p>
@@ -116,13 +149,19 @@
                     <!-- S.wear Card 03 -->
 
                     <div onclick="clickedCard('c6price'),cardNameEntry('c6name') "
-                        class=" border-lime-900 card w-96 bg-base-100 shadow-xl p-4">
-                        <figure class=" border-red-900 px-10 py-10">
-                            <img class="border-2 border-red-900" src="images/prod6.png" alt="kitchen-accessories"
-                                class="rounded-xl" />
+                        class="card w-96 bg-base-100 shadow-sm p-4">
+                        <figure class="px-10 py-10">
+                            <img src="images/prod6.png" alt="kitchen-accessories" class="rounded-xl" />
                         </figure>
-                        <div class=" border-red-900 card-body items-center text-center">
-                            <h2 id="c6name" class="border font-sans font-semibold text-xl card-title">Sports cates</h2>
+                        <div class="card-body items-center text-center">
+                            <div class="rating">
+                                <input type="radio" name="rating-6" class="mask mask-star-2 bg-amber-400" />
+                                <input type="radio" name="rating-6" class="mask mask-star-2 bg-amber-400" />
+                                <input type="radio" name="rating-6" class="mask mask-star-2 bg-amber-400" checked />
+                                <input type="radio" name="rating-6" class="mask mask-star-2 bg-amber-400" />
+                                <input type="radio" name="rating-6" class="mask mask-star-2 bg-amber-400" />
+                            </div>
+                            <h2 id="c6name" class=" font-sans font-semibold text-xl card-title">Sports cates</h2>
                             <p><span id="c6price">159.00</span> TK</p>
 
                         </div>
@@ -132,20 +171,26 @@
 
             <!-- Furniture Part -->
 
-            <div class=" border-red-900">
-                <h2 class=" border-red-900 font-sans font-semibold text-4xl">Furniture</h2>
-                <div class=" border-red-900 grid grid-cols-3">
+            <div class="my-5">
+                <h2 class="font-sans font-semibold text-4xl mb-5">Furniture</h2>
+                <div class="grid grid-cols-3 gap-9">
 
                     <!-- F.ure Card 01 -->
 
                     <div onclick="clickedCard('c7price'),cardNameEntry('c7name')"
-                        class=" border-lime-900 card w-96 bg-base-100 shadow-xl p-4">
-                        <figure class=" border-red-900 px-10 py-10">
-                            <img class=" border-red-900" src="images/prod7.png" alt="single-relax-chair"
-                                class="rounded-xl" />
+                        class="card w-96 bg-base-100 shadow-sm p-4">
+                        <figure class="px-10 py-10">
+                            <img src="images/prod7.png" alt="single-relax-chair" class="rounded-xl" />
                         </figure>
-                        <div class=" border-red-900 card-body items-center text-center">
-                            <h2 id="c7name" class="border font-sans font-semibold text-xl card-title">Single Relax Chair
+                        <div class="card-body items-center text-center">
+                            <div class="rating">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-amber-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-amber-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-amber-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-amber-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-amber-400" />
+                            </div>
+                            <h2 id="c7name" class=" font-sans font-semibold text-xl card-title">Single Relax Chair
                             </h2>
                             <p><span id="c7price">185.00</span> TK</p>
 
@@ -155,12 +200,18 @@
                     <!-- F.ure Card 02 -->
 
                     <div onclick="clickedCard('c8price'),cardNameEntry('c8name')" id="card-08"
-                        class=" border-lime-900 card w-96 bg-base-100 shadow-xl p-4">
-                        <figure class=" border-red-900 px-10 py-10">
-                            <img class=" border-red-900" src="images/prod8.png" alt="children-play"
-                                class="rounded-xl" />
+                        class=" 0 card w-96 bg-base-100 shadow-sm p-4">
+                        <figure class="px-10 py-10">
+                            <img src="images/prod8.png" alt="children-play" class="rounded-xl" />
                         </figure>
-                        <div class=" border-red-900 card-body items-center text-center">
+                        <div class="card-body items-center text-center">
+                            <div class="rating">
+                                <input type="radio" name="rating-8" class="mask mask-star-2 bg-amber-400" />
+                                <input type="radio" name="rating-8" class="mask mask-star-2 bg-amber-400" />
+                                <input type="radio" name="rating-8" class="mask mask-star-2 bg-amber-400" />
+                                <input type="radio" name="rating-8" class="mask mask-star-2 bg-amber-400" />
+                                <input type="radio" name="rating-8" class="mask mask-star-2 bg-amber-400" />
+                            </div>
                             <h2 id="c8name" class=" font-sans font-semibold text-xl card-title">Children Play</h2>
                             <p><span id="c8price">299.00</span> TK</p>
 
@@ -170,12 +221,18 @@
                     <!-- F.ure Card 03 -->
 
                     <div onclick="clickedCard('c9price'), cardNameEntry('c9name')"
-                        class="card-09 border-lime-900 card w-96 bg-base-100 shadow-xl p-4">
-                        <figure class=" border-red-900 px-10 py-10">
-                            <img class=" border-red-900" src="images/prod9.png" alt="flexible-sofa"
-                                class="rounded-xl" />
+                        class="card-09 0 card w-96 bg-base-100 shadow-sm p-4">
+                        <figure class="px-10 py-10">
+                            <img src="images/prod9.png" alt="flexible-sofa" class="rounded-xl" />
                         </figure>
-                        <div class=" border-red-900 card-body items-center text-center">
+                        <div class="card-body items-center text-center">
+                            <div class="rating">
+                                <input type="radio" name="rating-9" class="mask mask-star-2 bg-amber-400" />
+                                <input type="radio" name="rating-9" class="mask mask-star-2 bg-amber-400" />
+                                <input type="radio" name="rating-9" class="mask mask-star-2 bg-amber-400" />
+                                <input type="radio" name="rating-9" class="mask mask-star-2 bg-amber-400" />
+                                <input type="radio" name="rating-9" class="mask mask-star-2 bg-amber-400" />
+                            </div>
                             <h2 id="c9name" class=" font-sans font-semibold text-xl card-title">Flexible Sofa</h2>
                             <p><span id="c9price">339.00</span> TK</p>
                         </div>
@@ -186,20 +243,20 @@
 
         <!-- Right Section -->
 
-        <section class="ml-10 border-red-900 w-[500px]">
-            <div class="border border-red-900 rounded-b-lg font-sans font-medium text-2xl m-12 px-12 bg-base-100">
+        <section class="mt-40  w-[500px]">
+            <div class="grid rounded-b-lg font-sans font-medium text-2xl m-14 px-12 py-5 bg-base-100">
                 <h2>Have coupon?</h2>
-                <input id="discount-code" type="text" placeholder="Coupon code">
-                <button id="dis-btn" disabled>Apply</button>
+                <div class="grid grid-cols-2 py-4">
+                    <input id="discount-code" class="border text-xl" type="text" placeholder="Coupon code">
+                    <button id="dis-btn" class="apply-btn rounded-r-lg mr-8 p-2" disabled>Apply</button>
+                </div>
             </div>
             <!-- Selected List -->
             <div id="card-entry" class="rounded-t-lg font-sans font-medium text-2xl mx-14 px-12 py-6 bg-base-100">
-
             </div>
-
             <div class="rounded-b-lg font-sans font-medium text-2xl mx-14 px-12 bg-base-100">
-                <hr class="">
-                <p class=" border-red-900 mt-4">
+                <hr>
+                <p class="mt-4">
                     Total price : <span id="total-price" class="font-light">00.00</span> TK</p>
                 <p class="mt-2">Discount : <span id="discount" class="font-light">00.00</span> TK</p>
                 <p class="mt-2">

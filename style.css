@@ -15,3 +15,8 @@ figure {
     color: white;
     border-radius: 8px;
 }
+
+.apply-btn {
+    background-color: rgba(229, 39, 178, 100%);
+    color: white;
+}

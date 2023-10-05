@@ -15,6 +15,7 @@ document.getElementById('dis-btn').addEventListener('click', function () {
     }
 })
 
+
 function clickedCard(inputvalue) {
     const makePurchasebutton = document.getElementById('purchase-btn');
     makePurchasebutton.removeAttribute('disabled');
